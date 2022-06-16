@@ -1,0 +1,48 @@
+footer{
+    background-color: black;
+    padding: 2.5em;
+
+}
+
+.footer__ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: $fontS;
+    font-size: 24px;
+
+    li{
+
+        a{
+            text-decoration: none;
+            margin: 1em;
+            position: relative;
+            color: white; 
+            font-family: $fontS;       
+        }
+        margin: 0 auto;
+        padding-bottom: 10px;
+        border-bottom: 4px solid transparent;
+        list-style: none;
+    }
+    li:hover{
+        border-color: white;
+        transition: all 0.5s ease-out;
+    }
+}
+
+
+
+// Medias Queries
+
+@media screen and (max-width:763px){
+
+    .footer__ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content:flex-start;
+    }
+
+}

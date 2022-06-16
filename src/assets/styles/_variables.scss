@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+$colorN : #FFBF00;
+$colorG: #1ed12d;
+$colorR: red;
+$colorB: #000000;
+$colorF : #EFD168;
+
+$fontP : libre baskerville;
+$fontS : lato; 
+
+
+// Fuente Libre Baskerville
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+// Fuente Lato
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');

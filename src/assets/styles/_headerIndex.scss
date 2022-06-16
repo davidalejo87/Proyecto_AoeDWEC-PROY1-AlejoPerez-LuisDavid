@@ -1,0 +1,101 @@
+.header{
+    background-color: black;
+    height: 140px;
+    width: 100%;
+
+}
+
+.header__nav{
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.nav__logo{
+    width: 170px;
+    padding: 0;
+    img{
+        max-width: 100%;
+    }
+}
+
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    
+    a{
+        text-decoration: none;
+        margin: 1em;
+        position: relative;
+        color:$colorN; 
+        font-family: $fontS;       
+    }
+
+    li{
+        color: $colorN;
+        font-size: 22px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        border-bottom: 4px solid transparent;
+        list-style: none;
+        width: max-content;
+    }
+    li:hover{
+        border-color: $colorN;
+        transition: all 0.5s ease-out;
+    }
+}
+
+.nav__toggle{
+    color:$colorN;
+    background: none;
+    border:none;
+    font-size: 2em;
+    margin: 1.5em;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+// Medias Queries
+
+@media screen and(max-width:1100px){
+    .nav__ul{
+        li{
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media screen and(max-width:851px) {
+
+    .nav__ul{
+        right: -100%;
+        display: none;
+
+    }
+    .nav__toggle{
+        display: block;
+    }
+
+    .nav__ul-visible{
+        display: block;
+        z-index: 1;
+        right: 0%;
+        transition: all ease 0.3s;
+        flex-direction: column;
+        background-color: #00000f ;
+        position: absolute;
+        top: 140px;
+        padding: 2em 0;
+        height: 50%;
+        overflow-y: auto;
+        width: 40vh;
+        
+    }
+}

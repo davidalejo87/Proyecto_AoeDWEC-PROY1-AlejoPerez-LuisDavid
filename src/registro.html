@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/styles/registro.scss">
+    <title>Age of Empires 2</title>
+
+    <script src="https://kit.fontawesome.com/763955a487.js" crossorigin="anonymous"></script>
+    <script defer src="/src/assets/scripts/scriptMenu.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="index.html" class="nav__logo"><img class="logo" src="assets/images/logo2.png" alt="logo"></a>
+            <button class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav__ul">
+                <li class="nav__ul__li"><a href="civilizaciones.html">Civilizaciones</a></li>
+                <li class="nav__ul__li"><a href="#">Tecnologías</a></li>
+                <li class="nav__ul__li"><a href="#">Unidades</a></li>
+                <li class="nav__ul__li"><a href="#">Estructuras</a></li>
+                <li class="nav__ul__li"><a href="registro.html">Registrarse</a></li>
+                <li class="nav__ul__li"><a href="#">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <h1>Formulario de registro:</h1>
+            <form class="section__form" action="" id="form">
+                <!-- Grupo: Usuario -->
+				<fieldset class="form__group" id="group__user">
+					<label for="user" class="form__label">Usuario</label>
+					<fieldset class="form__group-input">
+						<input type="text" class="form__input" name="user" id="user" placeholder="nombre_usuario">
+						<i class="form__validate-state fas fa-times-circle"></i>
+					</fieldset>
+					<p class="form__input-error">El usuario tiene que ser de 4 a 16 dígitos y sólo puede contener números, letras y guion bajo.</p>
+				</fieldset>
+
+				<!-- Grupo: Nombre -->
+				<fieldset class="form__group" id="group__name">
+					<label for="name" class="form__label">Nombre</label>
+					<fieldset class="form__group-input">
+						<input type="text" class="form__input" name="name" id="name" placeholder="Nombre y Apellido">
+						<i class="form__validate-state fas fa-times-circle"></i>
+					</fieldset>
+					<p class="form__input-error">El nombre solo puede contener letras y espacios.</p>
+				</fieldset>
+
+				<!-- Grupo: Contraseña -->
+				<fieldset class="form__group" id="group__password">
+					<label for="password" class="form__label">Contraseña</label>
+					<fieldset class="form__group-input">
+						<input type="password" class="form__input" name="password" id="password" placeholder="******">
+						<i class="form__validate-state fas fa-times-circle"></i>
+					</fieldset>
+					<p class="form__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				</fieldset>
+
+				<!-- Grupo: Contraseña 2 -->
+				<fieldset class="form__group" id="group__password2">
+					<label for="password2" class="form__label">Repetir Contraseña</label>
+					<fieldset class="form__group-input">
+						<input type="password" class="form__input" name="password2" id="password2" placeholder="******">
+						<i class="form__validate-state fas fa-times-circle"></i>
+					</fieldset>
+					<p class="form__input-error">Ambas contraseñas deben ser iguales.</p>
+				</fieldset>
+
+				<!-- Grupo: Correo Electronico -->
+				<fieldset class="form__grupo" id="group__email">
+					<label for="email" class="form__label">Correo Electrónico</label>
+					<fieldset class="form__group-input">
+						<input type="email" class="form__input" name="email" id="email" placeholder="email@aoe.com">
+						<i class="form__validate-state fas fa-times-circle"></i>
+					</fieldset>
+					<p class="form__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+				</fieldset>
+
+				<!-- Grupo: Teléfono -->
+				<fieldset class="form__group" id="group__phone">
+					<label for="phone" class="form__label">Teléfono</label>
+					<fieldset class="form__group-input">
+						<input type="text" class="form__input" name="phone" id="phone" placeholder="666123456">
+						<i class="form__validate-state fas fa-times-circle"></i>
+					</fieldset>
+					<p class="form__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+				</fieldset>
+
+				<!-- Grupo: Terminos y Condiciones -->
+				<fieldset class="form__grupo" id="grupo__terms">
+					<label class="form__label">
+						<input class="form__checkbox" type="checkbox" name="terms" id="terms">
+						Acepto los Términos y Condiciones
+					</label>
+				</fieldset>
+
+				<fieldset class="form__message" id="form__message">
+					<p><i class="fas fa-exclamation-triangle"></i> <span>Error:</span> Por favor rellena el formulario correctamente. </p>
+				</fieldset>
+
+				<fieldset class="form__group form__group-button-send">
+					<button type="submit" class="form__button">Enviar</button>
+					<p class="form__message-succes" id="form__message-succes">Formulario enviado exitosamente!</p>
+				</fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="avisoLegal.html">Aviso legal</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="assets/scripts/validateForm.js"></script>
+</body>
+</html>
