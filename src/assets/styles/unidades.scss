@@ -6,4 +6,38 @@ main{
     padding: 2em;
     background-color: #EFD168;
     min-height: 700px;
+    font-family: $fontP;
+}
+
+.section__ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: $fontS;
+    font-size: 24px;
+
+    li{
+
+        a{
+            text-decoration: none;
+            margin: 1em;
+            position: relative;
+            color: black; 
+            font-family: $fontS;
+                   
+        }
+        margin: 0 auto;
+        padding-bottom: 10px;
+        border-bottom: 4px solid transparent;
+        list-style: none;
+    }
+}
+#sectionPersonajes{
+    ul{
+        h3{
+        margin-top: 2em;
+    }
+    }
 }

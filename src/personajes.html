@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/assets/styles/index.scss">
-    <title>Age of Empires 2</title>
+    <link rel="stylesheet" href="/src/assets/styles/unidades.scss">
+    <title>Civilizaciones</title>
 
     <script src="https://kit.fontawesome.com/763955a487.js" crossorigin="anonymous"></script>
     <script defer src="/src/assets/scripts/scriptMenu.js"></script>
-
 </head>
 <body>
     <header class="header">
@@ -28,31 +27,24 @@
             </ul>
         </nav>
     </header>
-
     <main class="main">
-        <section class="main__textSection">
-            <h1>Se el mejor estratega</h1>
-            <p>Age of Empires 2 : el mejor videojuego de estrategia en tiempo real para pc. 
-                El juego está ambientado entre la Edad Media, justo tras la caida del  Imperio romano 
-                de Occidente y la toma de Roma por los visigodos y los vándalos, hasta el Renacimiento.</p>
-                 
-            <p>Elige entre 13 civilizaciones existentes en aquel período histórico,  
-                forma un vasto imperio y vence a tus enemigos.</p>
+        <section class="section__ul">
+            <li><a href="personajes.html">Todos los personajes</a></li>
+            <li><a href="alumnos.html">Alumnos</a></li>
+            <li><a href="profesores.html">Profesores</a></li>
         </section>
-        <section class="main__formSection">
-            <form action="formSection__singUp" class="formSection__singUp">
-                <input type="text" name="singUp" id="singUp" placeholder="e-mail">
-                <button type="submit">Regístrate</button>
-            </form>
-        </section>
+        <section id="sectionPersonajes"></section>
+
+
     </main>
     <footer class="footer">
         <ul class="footer__ul">
             <li><a href="privacidad.html">Privacidad</a></li>
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="avisoLegal.html">Aviso legal</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </footer>
+    <script src="/src/assets/scripts/asyncFetch.js"></script>
 </body>
 </html>
