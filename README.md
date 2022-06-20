@@ -1,5 +1,7 @@
 Proyecto para el módulo de Cliente de 2º DAW en parcel 2
 
-Primero hacer un npm install
+Escribir en consola: 
 
-Luego hacer un npm run 
+npm install
+
+npm start 
